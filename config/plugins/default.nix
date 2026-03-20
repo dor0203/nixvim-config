@@ -1,8 +1,8 @@
 { ... }:
 {
   imports = [
-    ./lsp.nix
-    ./completions.nix
+#     ./lsp.nix
+#     ./completions.nix
     ./telescope.nix
     ./undotree.nix
     ./treesitter.nix
@@ -47,7 +47,7 @@
     numbertoggle.enable = true;
     web-devicons.enable = true;
     lastplace.enable = true;
-    rainbow-delimiters.enable = true;
+    # rainbow-delimiters.enable = true;
     # rustaceanvim.enable = true;
     # "dressing.nvim".enable = true;
     # vimtex.enable = true;

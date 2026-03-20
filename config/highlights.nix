@@ -1,4 +1,7 @@
 {
+  # set gui colors for terminal
+  opts.termguicolors = true;
+
   colorschemes.base16 = {
     enable = true;
     colorscheme = {

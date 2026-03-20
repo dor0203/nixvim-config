@@ -3,31 +3,27 @@
     # show substitution preview
     inccommand = "split";
 
-    # set gui colors for terminal
-    termguicolors = true;
-
     # Do not save when switching buffers
     hidden = true;
 
     # Number of screen lines to keep above and below the cursor
     scrolloff = 8;
 
+    winblend = 10;
+    winborder = "rounded";
+
     # Better editor UI
     number = true;
     numberwidth = 1;
     relativenumber = true;
-    winblend = 10;
-    winborder = "rounded";
 
     # Better editing experience
-    expandtab = true;
-    smarttab = true;
-    cindent = true;
-    autoindent = true;
-    wrap = false;
     tabstop = 4;
-    shiftwidth = 4;
-    softtabstop = -1; # If negative, shiftwidth value is used
+    expandtab = true;
+    autoindent = true;
+    cindent = true;
+
+    wrap = false;
     list = true;
     listchars = "trail:·,nbsp:◇,tab:→ ,extends:▸,precedes:◂";
     conceallevel = 2;
