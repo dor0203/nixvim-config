@@ -1,5 +1,7 @@
 { pkgs, config, keymap, ... }:
 {
+  keymaps = import ./keymap.nix {inherit config keymap;};
+
   diagnostic.settings = {
     signs = false;
     underline = true;
@@ -13,6 +15,4 @@
     inlayHints = true;
     servers = import ./servers.nix { inherit pkgs; };
   };
-
-  keymaps = import ./keymap.nix {inherit config; inherit keymap;};
 }
