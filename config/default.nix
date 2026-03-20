@@ -7,6 +7,10 @@
     ./ftplugin.nix
     ./language
   ];
+ 
+  _module.args = {
+    keymap = (import ./keymap.nix).map;
+  };
 
   nixpkgs.config = {
     allowUnfree = true;
